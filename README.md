@@ -1,2 +1,2 @@
-#My Simple Python Mini-Projects ✨
+# My Simple Python Mini-Projects ✨
 
