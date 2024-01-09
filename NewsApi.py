@@ -30,3 +30,5 @@ def scrape_news_api(api_key='37060bfe96ec4de5a4cf4b3fed726089'):
 
 # Replace 'YOUR_API_KEY' with your actual News API key
 scrape_news_api()
+
+#For Any Information Visit https://newsapi.org/
