@@ -1,6 +1,6 @@
 import mysql.connector 
 
-mycon = mysql.connector.connect(host="localhost", user = "root", passwd = "Deepak@774") #Connecting To MySQL Server And Creating a Connecter Object
+mycon = mysql.connector.connect(host="localhost", user = "root", passwd = "Server Passwd") #Connecting To MySQL Server And Creating a Connecter Object
 
 if mycon.is_connected():    #Is Connected Method To Check the Connection With MySQL Server 
     print("*****PHONEBOOK INTIALISED*****")
