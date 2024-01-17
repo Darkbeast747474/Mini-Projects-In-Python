@@ -1,6 +1,6 @@
 import requests
 
-def scrape_news_api(api_key='37060bfe96ec4de5a4cf4b3fed726089'):    
+def scrape_news_api(api_key):    
     
     ''' Function That Fetchs The Information From A News API and Displays It Functions Parameters Are Your API Key'''
     
