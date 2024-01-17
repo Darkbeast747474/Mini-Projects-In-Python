@@ -28,7 +28,7 @@ def scrape_news_api(api_key):
         print("Error:", data["Unable To Get The Info Ryt Now!"])
     return data #Function Also returns The Response As Json object
 
-# Replace 'YOUR_API_KEY' with your actual News API key
-scrape_news_api()
+if __name__ == "__main__":
+  scrape_news_api()  #Pass Your API Key In Function Parameters
 
 #For Any Information Visit https://newsapi.org/
