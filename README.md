@@ -13,3 +13,5 @@
 - [Call API App](https://github.com/Darkbeast747474/My-Python-Mini-Projects/blob/main/TwilioCallAPI.PY) - A Call API Program Using Twilio Api Provider For Calling Call any Number From a Verified Number For Further Information Click [Here](https://www.twilio.com)
 
 - [Weather App](https://github.com/Darkbeast747474/Mini-Projects-In-Python/blob/main/WeatherApiFetcher.py) - A Weather API Provides The Latest Weather Data Of Your Desired Location U Must Have A API Key Also, Get One [Here](https://www.weatherapi.com/)
+
+- [Flask API](https://github.com/Darkbeast747474/Mini-Projects-In-Python/blob/main/FlaskApp.py) - A REST API Using Flask This Simply Corresponds to the Get And Post Requests By Defining Custom Resource Types 
