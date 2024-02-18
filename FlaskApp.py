@@ -1,4 +1,4 @@
-from flask import Flask, jsonify, request 
+from flask import Flask, jsonify, request , Response
 from flask_restful import Resource, Api  #using flask_restful 
 
 # creating the flask app 
@@ -22,11 +22,12 @@ class Hello(Resource):
 
 	# Corresponds to POST request 
 	def post(self): 
-		
-		data = request.get_json()	
-		return jsonify({'data': data}), 201
-
-
+            data = request.get_json()
+            response = jsonify(data)
+            response.status_code = 200
+            return response
+        
+        
 # another resource to calculate the square of a number 
 class Square(Resource): 
 
@@ -40,16 +41,28 @@ class RQ(Resource):
     #Corresponds to Get request and this function where a text file 'requirements.txt' contents 
     #are returned in dictionary or Json format
     def get(self):
-        f = open('C:/Users/HP/Documents/Clg/Py/requirements.txt', 'r')
         rq = {}
-        for i, r in enumerate(f.readlines()):
-            rq[f'{i}'] = f'{r.replace('\n', '')}'
-        f.close()  
+        with open('*Your File URL here*', 'r') as f: 
+          for i, r in enumerate(f.readlines()):
+            rq[f'{i}'] = f'{r.replace('\n', '')}'  
         return jsonify(rq)
-
+    
+    #Corresponds to Post request where this Function append The Data Sent by Request Into the Same File
+    def post(self):
+        data = request.get_json()['Name']
+        rq={}
+        with open('*Your File URL here*','+a') as f:
+            f.write(f'\n{data}')
+            for i, r in enumerate(f.readlines()):
+              rq[f'{i}'] = f'{r.replace('\n', '')}'
+        response = jsonify(rq)
+        response.status_code = 200
+        return response  
+        
+		
 
 # Add the resources with their respective endpoints
-api.add_resource(Hello, '/hello')
+api.add_resource(Hello, '/hello', methods=['GET','POST'])
 api.add_resource(Square, '/square/<int:num>')
 api.add_resource(RQ, '/rq', methods=['GET', 'POST']) #describing the request methods for this endpoint of a resource
 
