@@ -14,4 +14,4 @@
 
 - [Weather App](https://github.com/Darkbeast747474/Mini-Projects-In-Python/blob/main/WeatherApiFetcher.py) - A Weather API Provides The Latest Weather Data Of Your Desired Location U Must Have A API Key Also, Get One [Here](https://www.weatherapi.com/)
 
-- [Flask API](https://github.com/Darkbeast747474/Mini-Projects-In-Python/blob/main/FlaskApp.py) - A REST API Using Flask This Simply Corresponds to the Get And Post Requests By Defining Custom Resource Types 
+- [Flask API](https://github.com/Darkbeast747474/Mini-Projects-In-Python/blob/main/FlaskApp.py) - A REST API Using Flask This Simply Corresponds to the GET And POST Requests By Defining Custom Resource Types , Also Help To Send the Conent From Specified file With GET request and Appending Some Content Back To File As Well USing POST by Sending request in Json Format
