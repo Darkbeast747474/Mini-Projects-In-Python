@@ -4,7 +4,7 @@
 
 - [KBC](https://github.com/Darkbeast747474/My-Python-Mini-Projects/blob/main/KBC.py) - A Game Replica Of Famous T.V. Show Written in Basic Python With Customizable Questions and Answers
 
-- [News Headlines App](https://github.com/Darkbeast747474/My-Python-Mini-Projects/blob/main/NewsApi.py) - Provides a list of News headlines On The Basis Of Your Query And A API Used. Grab Ur API Key And Account By Clicking [Here](https://newsapi.org/)
+- [News Headlines App](https://github.com/Darkbeast747474/My-Python-Mini-Projects/blob/main/NewsApi.py) - Provides a list of News headlines On The Basis Of Your Query And an API Used. Grab Ur API Key And Account By Clicking [Here](https://newsapi.org/)
 
 - [PhoneBook App](https://github.com/Darkbeast747474/My-Python-Mini-Projects/blob/main/PhoneBook.py) - An Interface Of a Virtual PhoneBook Using MYSQL Backend Connection
 
