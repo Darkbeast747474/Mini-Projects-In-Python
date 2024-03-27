@@ -25,13 +25,15 @@ def ci(x):
         return 'Gun🔫'
 
 
-uc = int(input('Enter The Option You Wanna Choose\n0 for Snake🐍\t1 for Water💦\t2 for Gun🔫:\t'))
+while(True):
+    uc = int(input('Enter The Option You Wanna Choose\n0 for Snake🐍\t1 for Water💦\t2 for Gun🔫:\t3 for Exit\n'))
+    if uc != 3:
+        cc = int(r.choice(range(0, 3))) #using choice method of Random Module 
 
-print('\n')
+        print("User:", ci(uc), '\n')
+        print("Computer:", ci(cc), '\n')
 
-cc = int(r.choice(range(0, 3))) #using choice method of Random Module 
-
-print("User:", ci(uc), '\n')
-print("Computer:", ci(cc), '\n')
-
-cv(uc, cc) #Calling the Function To Identify The Outcome
+        cv(uc, cc) #Calling the Function To Identify The Outcome
+    else:
+        print('Thanks For Playing!!')
+        break    
